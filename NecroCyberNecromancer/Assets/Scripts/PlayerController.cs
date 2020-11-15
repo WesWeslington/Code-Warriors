@@ -10,10 +10,14 @@ public class PlayerController : MonoBehaviour
     float horizInput;
     Vector3 forwardMovement;
     Vector3 rightMovement;
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         charController = GetComponent<CharacterController>();
+        anim = GetComponent<Animator>();
+
+     
     }
 
     // Update is called once per frame
@@ -29,7 +33,13 @@ public class PlayerController : MonoBehaviour
         forwardMovement = transform.forward * vertInput;
         rightMovement = transform.right * horizInput;
         charController.SimpleMove(forwardMovement + rightMovement);
-        
-     
+
+
+        // anim.SetFloat("horizontal", (forwardMovement.x+rightMovement.x));
+        // anim.SetFloat("vertical", (forwardMovement.z + rightMovement.z));
+        anim.SetFloat("horizontal", Input.GetAxis("Horizontal"));
+        anim.SetFloat("vertical", Input.GetAxis("Vertical"));
+        anim.SetFloat("speed", (forwardMovement.sqrMagnitude + rightMovement.sqrMagnitude));
+
     }
 }
