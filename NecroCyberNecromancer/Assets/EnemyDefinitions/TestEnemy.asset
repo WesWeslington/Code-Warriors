@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: TestEnemy
   m_EditorClassIdentifier: 
   enemySpec: 1
-  eHead: {fileID: 0}
-  eBody: {fileID: 0}
-  anims: []
+  enemySprites: {fileID: 11400000, guid: a75c79d3be64ffe41a18c85013301885, type: 2}
+  enemyAnimations: {fileID: 22100000, guid: 81c89969507ce5e47b528c35e5cc36a1, type: 2}
