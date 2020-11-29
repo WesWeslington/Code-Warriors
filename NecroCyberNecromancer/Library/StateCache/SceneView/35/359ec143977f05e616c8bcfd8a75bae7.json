@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":-9.92820930480957,"y":3.2805614471435549,"z":-4.412659168243408},"rotation":{"x":0.13711301982402802,"y":0.3762739896774292,"z":-0.05640847980976105,"w":0.9145772457122803},"size":3.606043815612793,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":5.365909576416016,"y":1.3217122554779053,"z":1.6029720306396485},"rotation":{"x":0.14010600745677949,"y":-0.07714741677045822,"z":0.010950366035103798,"w":0.9870648384094238},"size":3.9908993244171144,"orthographic":false}
+>>>>>>> Terran's-Branch

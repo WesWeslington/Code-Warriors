@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 51
     width: 1904
@@ -22,8 +23,18 @@ MonoBehaviour:
   m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 592}
+=======
+    x: 0
+    y: 43
+    width: 1920
+    height: 997
+  m_ShowMode: 4
+  m_Title: Scene
+  m_RootView: {fileID: 2}
+  m_MinSize: {x: 875, y: 571}
+>>>>>>> Terran's-Branch
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -44,8 +55,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1904
     height: 981
+=======
+    width: 1920
+    height: 997
+>>>>>>> Terran's-Branch
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -69,7 +85,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1904
+=======
+    width: 1920
+>>>>>>> Terran's-Branch
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -93,8 +113,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 961
     width: 1904
+=======
+    y: 977
+    width: 1920
+>>>>>>> Terran's-Branch
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -119,12 +144,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1904
     height: 931
   m_MinSize: {x: 909, y: 542}
   m_MaxSize: {x: 22004, y: 12042}
   vertical: 0
   controlID: 96
+=======
+    width: 1920
+    height: 947
+  m_MinSize: {x: 907, y: 421}
+  m_MaxSize: {x: 22003, y: 12021}
+  vertical: 0
+  controlID: 11307
+>>>>>>> Terran's-Branch
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,12 +179,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 637
     height: 931
   m_MinSize: {x: 201, y: 542}
   m_MaxSize: {x: 4001, y: 12042}
   vertical: 1
   controlID: 75
+=======
+    width: 920
+    height: 947
+  m_MinSize: {x: 200, y: 421}
+  m_MaxSize: {x: 4001, y: 12021}
+  vertical: 1
+  controlID: 11312
+>>>>>>> Terran's-Branch
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,11 +211,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 637
     height: 331
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
+=======
+    width: 920
+    height: 277
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
+>>>>>>> Terran's-Branch
   m_Panes:
   - {fileID: 14}
   m_Selected: 0
@@ -193,12 +244,21 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 331
     width: 637
     height: 430
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
+=======
+    y: 277
+    width: 920
+    height: 549
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 16}
+>>>>>>> Terran's-Branch
   m_Panes:
   - {fileID: 13}
   m_Selected: 0
@@ -219,12 +279,21 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 761
     width: 637
     height: 170
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
+=======
+    y: 826
+    width: 920
+    height: 121
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
+>>>>>>> Terran's-Branch
   m_Panes:
   - {fileID: 15}
   m_Selected: 0
@@ -244,6 +313,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 637
     y: 0
     width: 358
@@ -251,6 +321,15 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
+=======
+    x: 920
+    y: 0
+    width: 282
+    height: 947
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
+>>>>>>> Terran's-Branch
   m_Panes:
   - {fileID: 16}
   m_Selected: 0
@@ -270,10 +349,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 995
     y: 0
     width: 415
     height: 931
+=======
+    x: 1202
+    y: 0
+    width: 281
+    height: 947
+>>>>>>> Terran's-Branch
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 17}
@@ -296,6 +382,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1410
     y: 0
     width: 494
@@ -303,6 +390,15 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
+=======
+    x: 1483
+    y: 0
+    width: 437
+    height: 947
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 20}
+>>>>>>> Terran's-Branch
   m_Panes:
   - {fileID: 18}
   m_Selected: 0
@@ -327,10 +423,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 412
     width: 636
     height: 409
+=======
+    x: 0
+    y: 350
+    width: 919
+    height: 528
+>>>>>>> Terran's-Branch
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -374,16 +477,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 636
       height: 388
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 318, y: 194}
+=======
+      width: 919
+      height: 507
+    m_Scale: {x: 2, y: 2}
+    m_Translation: {x: 523.5, y: 238.9526}
+>>>>>>> Terran's-Branch
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -318
       y: -194
       width: 636
@@ -391,6 +502,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 636, y: 409}
+=======
+      x: -261.75
+      y: -119.4763
+      width: 459.5
+      height: 253.5
+    m_MinimalGUI: 1
+  m_defaultScale: 0.66015625
+  m_LastWindowPixelSize: {x: 919, y: 528}
+>>>>>>> Terran's-Branch
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -404,6 +524,138 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: 663490763026382308, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 73
+    width: 919
+    height: 558
+  m_ViewDataDictionary: {fileID: 0}
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: 2092950556346220712, guid: 330301f91c5874c4991b6b4180ab8193, type: 2}
+    - {fileID: -3832788952571970632, guid: 330301f91c5874c4991b6b4180ab8193, type: 2}
+    - {fileID: 3507823626419603036, guid: 27079658c087c324db1de908bb46b643, type: 2}
+    - {fileID: 8325514601021310488, guid: ac50b6e7edbf97547834debb7021456d, type: 2}
+    - {fileID: 7170291610080341461, guid: a8dac90caa7ded34789df551466a3700, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 0.69802344
+      e01: 0
+      e02: 0
+      e03: 122.847595
+      e10: 0
+      e11: 0.69802344
+      e12: 0
+      e13: -85.46207
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1.009707
+      e01: 0
+      e02: 0
+      e03: 41.831642
+      e10: 0
+      e11: 1.009707
+      e12: 0
+      e13: 35.561813
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: -57
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 128
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.620455
+      e01: 0
+      e02: 0
+      e03: 187.5294
+      e10: 0
+      e11: 0.620455
+      e12: 0
+      e13: 378.46515
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.77789474
+      e01: 0
+      e02: 0
+      e03: -23.894745
+      e10: 0
+      e11: 0.77789474
+      e12: 0
+      e13: 256.37894
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: ac50b6e7edbf97547834debb7021456d, type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 8325514601021310488, guid: ac50b6e7edbf97547834debb7021456d, type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 1
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+>>>>>>> Terran's-Branch
   m_EditorHideFlags: 1
   m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -416,10 +668,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 81
     width: 636
     height: 310
+=======
+    x: 0
+    y: 73
+    width: 919
+    height: 256
+>>>>>>> Terran's-Branch
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 4c78cf9e074c1e443a8877ac06f2b145
@@ -432,9 +691,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -9.928209, y: 3.2805614, z: -4.412659}
     speed: 2
     m_Value: {x: -9.928209, y: 3.2805614, z: -4.412659}
+=======
+    m_Target: {x: 5.3659096, y: 1.3217123, z: 1.602972}
+    speed: 2
+    m_Value: {x: 5.3659096, y: 1.3217123, z: 1.602972}
+>>>>>>> Terran's-Branch
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -460,7 +725,7 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     yGrid:
       m_Fade:
         m_Target: 1
@@ -481,6 +746,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.13711302, y: 0.376274, z: -0.05640848, w: 0.91457725}
     speed: 2
     m_Value: {x: 0.13711196, y: 0.37627107, z: -0.056408044, w: 0.91457015}
@@ -488,6 +754,15 @@ MonoBehaviour:
     m_Target: 3.6060438
     speed: 2
     m_Value: 3.6060438
+=======
+    m_Target: {x: 0.14010601, y: -0.07714742, z: 0.010950366, w: 0.98706484}
+    speed: 2
+    m_Value: {x: 0.14158657, y: -0.07713097, z: 0.011066084, w: 0.98685443}
+  m_Size:
+    m_Target: 3.9908993
+    speed: 2
+    m_Value: 3.9908993
+>>>>>>> Terran's-Branch
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -512,7 +787,39 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
+<<<<<<< HEAD
 --- !u!114 &15
+=======
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: 1561878555887300916, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 350
+    width: 919
+    height: 528
+  m_ViewDataDictionary: {fileID: 0}
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: -12116
+--- !u!114 &17
+>>>>>>> Terran's-Branch
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -532,10 +839,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 842
     width: 636
     height: 149
+=======
+    x: 0
+    y: 899
+    width: 919
+    height: 100
+>>>>>>> Terran's-Branch
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &16
 MonoBehaviour:
@@ -557,17 +871,30 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 645
     y: 81
     width: 356
     height: 910
+=======
+    x: 920
+    y: 73
+    width: 280
+    height: 926
+>>>>>>> Terran's-Branch
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 62fbffff
+=======
+      m_SelectedIDs: 7a360000
+      m_LastClickedID: 0
+      m_ExpandedIDs: acd0ffffdad5ffff40dbffff8ae2ffff8ce2ffff8ee2ffff90e2ffff98e2ffff9ae2ffffa0e2ffff9ef6ffff44fbffff763900008a390000b2390000c2390000ec3900001e3a00003c3a0000
+>>>>>>> Terran's-Branch
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -611,10 +938,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1003
     y: 81
     width: 413
     height: 910
+=======
+    x: 1202
+    y: 73
+    width: 279
+    height: 926
+>>>>>>> Terran's-Branch
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -628,20 +962,29 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
+<<<<<<< HEAD
     m_Folders: []
+=======
+    m_Folders:
+    - Assets/EnemyDefinitions
+>>>>>>> Terran's-Branch
     m_Globs: []
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\User\Documents\CodeWarriors\Code-Warriors\NecroCyberNecromancer
+  m_LastProjectPath: A:\Spy's Projects\GitHub\Code-Warriors\NecroCyberNecromancer
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 20470000
     m_LastClickedID: 18208
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000060380000663800006a3800006c38000006390000083900000a3900000c3900000e39000010390000
+=======
+    m_ExpandedIDs: ffffffff000000001c3800001e380000263800002a380000c6380000c8380000ca380000cc380000d0380000d2380000ea380000f0380000f83800005a390000
+>>>>>>> Terran's-Branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -669,7 +1012,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: ffffffff0000000060380000663800006a3800006c38000006390000083900000a3900000c3900000e39000010390000
+=======
+    m_ExpandedIDs: ffffffff000000001c3800001e380000263800002a380000c6380000c8380000ca380000cc380000ce380000d0380000d2380000ea380000f0380000f8380000563900005a390000ec510000
+>>>>>>> Terran's-Branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -745,10 +1092,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1418
     y: 81
     width: 493
     height: 910
+=======
+    x: 1483
+    y: 73
+    width: 436
+    height: 926
+>>>>>>> Terran's-Branch
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
