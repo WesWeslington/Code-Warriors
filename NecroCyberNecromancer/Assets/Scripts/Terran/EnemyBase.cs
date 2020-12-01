@@ -41,4 +41,9 @@ public class EnemyBase : MonoBehaviour
     {
         
     }
+
+    public void BasicAttack()
+    {
+        print("Enemy Attacking");
+    }
 }

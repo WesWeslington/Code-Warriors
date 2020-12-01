@@ -26,6 +26,8 @@ public class EnemyDef : ScriptableObject
     private float speedRun = 3;
     [SerializeField]
     private float damage = 1;
+    [SerializeField]
+    private float attackDelay = 1;
 
     [SerializeField]
     private List<Transform> projectiles = new List<Transform>();
@@ -46,15 +48,19 @@ public class EnemyDef : ScriptableObject
     }
     public float SpeedWalk
     {
-        get { return baseHP; }
+        get { return speedWalk; }
     }
     public float SpeedRun
     {
-        get { return baseHP; }
+        get { return speedRun; }
     }
     public float Damage
     {
-        get { return baseHP; }
+        get { return damage; }
+    }
+    public float AttackDelay
+    {
+        get { return attackDelay; }
     }
     public List<Transform> Projectiles
     {
