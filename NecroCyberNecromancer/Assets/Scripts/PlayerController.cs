@@ -18,12 +18,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce=10;
     Vector3 movement;
     [SerializeField] private float rayCastJumpDistance = 1f;
+
+    float playerSpeed;//Used to store the speed when halving it
     // Start is called before the first frame update
     void Start()
     {
         charController = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+        playerSpeed = movementSpeed/2;
     }
 
     // Update is called once per frame
@@ -34,6 +37,18 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
+
+        if (!IsGrounded())
+        {
+            movementSpeed = playerSpeed;
+            anim.SetBool("isGrounded", false);
+        }
+        else
+        {
+            anim.SetBool("isGrounded", true);
+
+            movementSpeed = playerSpeed * 2;
         }
     }
     private void FixedUpdate()
