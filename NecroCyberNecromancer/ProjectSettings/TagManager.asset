@@ -4,8 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - ground
   - player
+=======
+  - shoot
+>>>>>>> N8's-Branch
   layers:
   - Default
   - TransparentFX

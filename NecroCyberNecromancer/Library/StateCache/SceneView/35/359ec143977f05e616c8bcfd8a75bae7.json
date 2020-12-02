@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":-14.44098949432373,"y":7.916452407836914,"z":1.7117486000061036},"rotation":{"x":0.4886249601840973,"y":-0.08557084947824478,"z":0.048189494758844379,"w":0.8667921423912048},"size":3.783673048019409,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":0.8525312542915344,"y":2.784158945083618,"z":-1.2383663654327393},"rotation":{"x":-0.5456538796424866,"y":-0.34603169560432436,"z":0.2635425329208374,"w":-0.7162466645240784},"size":2.7700717449188234,"orthographic":false}
+>>>>>>> N8's-Branch
