@@ -28,6 +28,15 @@ public class EnemyDef : ScriptableObject
     private float damage = 1;
     [SerializeField]
     private float attackDelay = 1;
+    [SerializeField]
+    private float aggressionRadius = 5;
+
+    [SerializeField]
+    private float idleMaxDelay = 1;
+    [SerializeField]
+    private IdleType idleType = IdleType.Sleep;
+    [SerializeField]
+    private float patrolRadius = 10;
 
     [SerializeField]
     private List<Transform> projectiles = new List<Transform>();
@@ -62,6 +71,25 @@ public class EnemyDef : ScriptableObject
     {
         get { return attackDelay; }
     }
+    public float AggressionRadius
+    {
+        get { return aggressionRadius; }
+    }
+    public float PatrolRadius
+    {
+        get { return patrolRadius; }
+    }
+    /// <summary>
+    /// Returns a Vector2 where X is the minimum and Y is the maximum value.
+    /// </summary>
+    public Vector2 IdleDelay
+    {
+        get { return new Vector2(0,idleMaxDelay); }
+    }
+    public IdleType IdleType
+    {
+        get { return idleType; }
+    }
     public List<Transform> Projectiles
     {
         get { return projectiles; }
@@ -73,5 +101,12 @@ public enum EnemySpecies
 {
     Humanoid,
     Fish
+}
+
+public enum IdleType
+{
+    Sleep,
+    Guard,
+    Patrol
 }
 
