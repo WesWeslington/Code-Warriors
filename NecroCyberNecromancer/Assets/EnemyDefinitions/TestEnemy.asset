@@ -15,3 +15,13 @@ MonoBehaviour:
   enemySpec: 1
   enemySprites: {fileID: 11400000, guid: a75c79d3be64ffe41a18c85013301885, type: 2}
   enemyAnimations: {fileID: 22100000, guid: 81c89969507ce5e47b528c35e5cc36a1, type: 2}
+  baseHP: 10
+  speedWalk: 1
+  speedRun: 3
+  damage: 1
+  attackDelay: 1
+  aggressionRadius: 10
+  idleMaxDelay: 5
+  idleType: 1
+  patrolRadius: 5
+  projectiles: []
