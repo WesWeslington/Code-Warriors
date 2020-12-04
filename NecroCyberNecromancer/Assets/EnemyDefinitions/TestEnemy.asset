@@ -20,8 +20,9 @@ MonoBehaviour:
   speedRun: 3
   damage: 1
   attackDelay: 1
+  attackRange: 5
   aggressionRadius: 10
-  idleMaxDelay: 5
-  idleType: 1
-  patrolRadius: 5
+  idleMaxDelay: 1
+  idleType: 2
+  patrolRadius: 1
   projectiles: []

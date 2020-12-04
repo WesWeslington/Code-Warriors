@@ -34,13 +34,21 @@ public class EnemyBase : MonoBehaviour
         get { return visuals; }
     }
 
+    [SerializeField]
     MoveType moveState = MoveType.Stopped;
     float moveTimeout = 1;
+    [SerializeField]
+    float attackTimeRemaining = 0;
     float idleTimeRemaining = 0;
 
     bool isAngry = false;
 
+    float direction = 0;
+
     Transform playerRef = null;
+
+    [SerializeField]
+    float health = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -52,24 +60,22 @@ public class EnemyBase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            MoveTo(new Vector3(Random.Range(0, 10), 0, Random.Range(0, 10)));
-        }
-
         if(moveState != MoveType.Stopped)
         {
             CalculateSpeed();
+            
+            CheckPathEnd();
         }
 
         if (Vector3.Distance(this.transform.position, playerRef.position) <= definition.AggressionRadius)
         {
             isAngry = true;
             MoveTo(playerRef.position);
+            BasicAttack();
         }
         else { isAngry = false; }
 
-        if(!isAngry)
+        if(!isAngry && moveState == MoveType.Stopped)
         {
             DoIdleTimer();
         }
@@ -91,6 +97,8 @@ public class EnemyBase : MonoBehaviour
         {
             patrolPoints.Add(this.transform);
         }
+
+        health = definition.Health;
     }
 
     float CalculateSpeed()
@@ -106,6 +114,7 @@ public class EnemyBase : MonoBehaviour
         }else
         {
             _speed = 0;
+            moveState = MoveType.Stopped;
         }
 
         navAgent.speed = _speed;
@@ -128,11 +137,12 @@ public class EnemyBase : MonoBehaviour
 
     void IdlePatrol()
     {
-        if (Vector3.Distance(this.transform.position,patrolPoints[patrolIndex].position) <= navAgent.stoppingDistance)
+        if(moveState == MoveType.Stopped)
         {
             if(idleTimeRemaining <= 0)
             {
-                if(patrolIndex < patrolPoints.Count-1)
+                idleTimeRemaining = Random.Range(definition.IdleDelay.x, definition.IdleDelay.y);
+                if (patrolIndex < patrolPoints.Count-1)
                 {
                     patrolIndex++;
                     MoveTo(patrolPoints[patrolIndex].position + new Vector3(Random.Range(-Definition.PatrolRadius, Definition.PatrolRadius), patrolPoints[patrolIndex].position.y, Random.Range(-Definition.PatrolRadius, Definition.PatrolRadius)));
@@ -141,11 +151,8 @@ public class EnemyBase : MonoBehaviour
                     patrolIndex=0;
                     MoveTo(patrolPoints[patrolIndex].position + new Vector3(Random.Range(-Definition.PatrolRadius, Definition.PatrolRadius), patrolPoints[patrolIndex].position.y, Random.Range(-Definition.PatrolRadius, Definition.PatrolRadius)));
                 }
-            }else
-            {
-                idleTimeRemaining = Random.Range(definition.IdleDelay.x, definition.IdleDelay.y);
             }
-        }else if(!navAgent.hasPath)
+        }else if(moveState != MoveType.Stopped && !navAgent.hasPath)
         {
             patrolIndex = Random.Range(0, patrolPoints.Count);
             MoveTo(patrolPoints[patrolIndex].position + new Vector3(Random.Range(-Definition.PatrolRadius, Definition.PatrolRadius), patrolPoints[patrolIndex].position.y, Random.Range(-Definition.PatrolRadius, Definition.PatrolRadius)));
@@ -157,6 +164,7 @@ public class EnemyBase : MonoBehaviour
         if (idleTimeRemaining <= 0 && navAgent.remainingDistance <= navAgent.stoppingDistance + 1)
         {
             MoveTo(patrolPoints[patrolIndex].position + new Vector3(Random.Range(-Definition.PatrolRadius, Definition.PatrolRadius), patrolPoints[patrolIndex].position.y, Random.Range(-Definition.PatrolRadius, Definition.PatrolRadius)));
+            idleTimeRemaining = Random.Range(definition.IdleDelay.x, definition.IdleDelay.y);
         }
     }
 
@@ -171,21 +179,39 @@ public class EnemyBase : MonoBehaviour
         navAgent.SetDestination(_target);
         moveTimeout = (Vector3.Distance(_target, navAgent.pathEndPosition)/navAgent.speed) * 2f;
         if (isAngry) { moveState = MoveType.Running; } else { moveState = MoveType.Walking; }
+        navAgent.isStopped = false;
+        //print("Setting new path");
         //StartCoroutine(MoveLimitTimer());
     }
 
     public virtual void CheckPathEnd()
     {
-        if (navAgent.pathEndPosition != null && Vector3.Distance(navAgent.pathEndPosition, this.transform.position) <= navAgent.stoppingDistance + 0.25f)
+        //print(Vector3.Distance(navAgent.pathEndPosition, this.transform.position));
+        if (navAgent.pathEndPosition != null && Vector3.Distance(navAgent.pathEndPosition, this.transform.position) <= navAgent.stoppingDistance + 0.25f && moveState != MoveType.Stopped)
         {
+            //print("Stopping path");
             navAgent.isStopped = true;
+            moveState = MoveType.Stopped;
             //StopCoroutine(MoveLimitTimer());
         }
     }
 
     public virtual void BasicAttack()
     {
-        print("Enemy Attacking");
+        //print("Enemy Attacking");
+        if(Vector3.Distance(this.transform.position,playerRef.position) <= definition.AttackRange && attackTimeRemaining <= 0)
+        {
+            navAgent.isStopped = true;
+            moveState = MoveType.Stopped;
+
+            animator.SetTrigger("Attacking");
+            SetDirection(GetDirection(playerRef.position));
+        }
+    }
+
+    public virtual void SpawnProjectile()
+    {
+
     }
 
     public virtual void TakeDamage(float _dmg)
@@ -211,6 +237,52 @@ public class EnemyBase : MonoBehaviour
             idleTimeRemaining -= Time.deltaTime;
         }
     }
+
+    void DoAttackTimer()
+    {
+        if (!isAngry) { return; }
+
+        if (attackTimeRemaining <= 0)
+        {
+            attackTimeRemaining = -1f;
+        }
+        else
+        {
+            attackTimeRemaining -= Time.deltaTime;
+        }
+    }
+
+    int GetDirection(Vector3 _target)
+    {
+        int _direction = 0;
+
+        Vector3 targetDir = _target - transform.position;
+        float _targetAngle = Vector3.Angle(targetDir, transform.forward) * 2;
+        print(_targetAngle);
+
+        if (_targetAngle >= 45 && _targetAngle < 135)
+        {
+            print("Looking Right");
+            _direction = 1;
+        }else if(_targetAngle >= 135 && _targetAngle < 225)
+        {
+            print("Looking Up");
+            _direction = 2;
+        }else if (_targetAngle >= 225 && _targetAngle < 315)
+        {
+            print("Looking Left");
+            _direction = 3;
+        }
+
+        return _direction;
+    }
+
+    void SetDirection(int _dir)
+    {
+        direction = _dir;
+        animator.SetInteger("Dir", _dir);
+    }
+
 
     //Not working for some reason but currently not needed either.
     public IEnumerator MoveLimitTimer()
