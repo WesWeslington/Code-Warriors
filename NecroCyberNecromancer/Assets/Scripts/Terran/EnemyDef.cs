@@ -29,6 +29,8 @@ public class EnemyDef : ScriptableObject
     [SerializeField]
     private float attackDelay = 1;
     [SerializeField]
+    private float attackRange = 2;
+    [SerializeField]
     private float aggressionRadius = 5;
 
     [SerializeField]
@@ -66,6 +68,10 @@ public class EnemyDef : ScriptableObject
     public float Damage
     {
         get { return damage; }
+    }
+    public float AttackRange
+    {
+        get { return attackRange; }
     }
     public float AttackDelay
     {

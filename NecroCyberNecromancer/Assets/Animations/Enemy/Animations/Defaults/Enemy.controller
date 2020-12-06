@@ -9,7 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: DIr
+    m_ConditionEvent: Dir
     m_EventTreshold: 2
   - m_ConditionMode: 1
     m_ConditionEvent: IsMoving
@@ -40,7 +40,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Attacking
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: DIr
+    m_ConditionEvent: Dir
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 978430821518832952}
@@ -125,7 +125,7 @@ AnimatorStateTransition:
     m_ConditionEvent: IsMoving
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: DIr
+    m_ConditionEvent: Dir
     m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 9103994365263128816}
@@ -182,7 +182,7 @@ AnimatorStateTransition:
     m_ConditionEvent: IsMoving
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: DIr
+    m_ConditionEvent: Dir
     m_EventTreshold: 3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 101002296345622447}
@@ -278,7 +278,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: DIr
+    m_ConditionEvent: Dir
     m_EventTreshold: 2
   - m_ConditionMode: 1
     m_ConditionEvent: IsMoving
@@ -353,7 +353,7 @@ AnimatorStateTransition:
     m_ConditionEvent: IsMoving
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: DIr
+    m_ConditionEvent: Dir
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5281419553151077909}
@@ -437,7 +437,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: DIr
+  - m_Name: Dir
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -531,7 +531,7 @@ AnimatorStateTransition:
     m_ConditionEvent: IsMoving
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: DIr
+    m_ConditionEvent: Dir
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5187092919371291984}
@@ -556,7 +556,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: DIr
+    m_ConditionEvent: Dir
     m_EventTreshold: 1
   - m_ConditionMode: 1
     m_ConditionEvent: IsMoving
@@ -665,7 +665,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Attacking
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: DIr
+    m_ConditionEvent: Dir
     m_EventTreshold: 3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7904059149620479657}
@@ -817,7 +817,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Attacking
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: DIr
+    m_ConditionEvent: Dir
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8936747743957830956}
@@ -842,7 +842,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: DIr
+    m_ConditionEvent: Dir
     m_EventTreshold: 2
   - m_ConditionMode: 1
     m_ConditionEvent: IsMoving
@@ -898,7 +898,7 @@ AnimatorStateTransition:
     m_ConditionEvent: IsMoving
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: DIr
+    m_ConditionEvent: Dir
     m_EventTreshold: 3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 101002296345622447}
@@ -975,7 +975,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Attacking
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: DIr
+    m_ConditionEvent: Dir
     m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7622893142669977666}
@@ -1058,7 +1058,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: DIr
+    m_ConditionEvent: Dir
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: IsMoving
