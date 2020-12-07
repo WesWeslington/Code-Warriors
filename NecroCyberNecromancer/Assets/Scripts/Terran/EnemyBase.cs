@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Animations;
 
 public class EnemyBase : MonoBehaviour
 {
@@ -46,6 +47,9 @@ public class EnemyBase : MonoBehaviour
     float direction = 0;
 
     [SerializeField]
+    Transform projectileSpawner = null;
+
+    [SerializeField]
     Transform playerRef = null;
 
     [SerializeField]
@@ -66,13 +70,24 @@ public class EnemyBase : MonoBehaviour
             CalculateSpeed();
             
             CheckPathEnd();
+
+            if (navAgent.nextPosition != null)
+            {
+                SetDirection(GetDirection(navAgent.pathEndPosition));
+            }
         }
 
         if (Vector3.Distance(this.transform.position, playerRef.position) <= definition.AggressionRadius)
         {
             isAngry = true;
-            MoveTo(playerRef.position);
-            BasicAttack();
+            if (Vector3.Distance(this.transform.position, playerRef.position) > definition.AttackRange && !animator.GetCurrentAnimatorStateInfo(0).IsName("Attack_Right_Default") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Attack_Left_Default") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Attack_Up_Default") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Attack_Down_Default"))
+            {
+                MoveTo(playerRef.position);
+            }else if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Attack_Right_Default") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Attack_Left_Default") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Attack_Up_Default") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Attack_Down_Default"))
+            {
+                BasicAttack();
+            }
+            
         }
         else { isAngry = false; }
 
@@ -94,7 +109,10 @@ public class EnemyBase : MonoBehaviour
         { navAgent = this.GetComponent<NavMeshAgent>(); }
         navAgent.speed = Definition.SpeedWalk;
 
-        if(patrolPoints.Count == 0)
+        if (projectileSpawner == null)
+        { projectileSpawner = this.transform; }
+
+        if (patrolPoints.Count == 0)
         {
             patrolPoints.Add(this.transform);
         }
@@ -202,19 +220,26 @@ public class EnemyBase : MonoBehaviour
     public virtual void BasicAttack()
     {
         //print("Enemy Attacking");
-        if(Vector3.Distance(this.transform.position,playerRef.position) <= definition.AttackRange && attackTimeRemaining <= 0)
+        if(Vector3.Distance(this.transform.position,playerRef.position) <= definition.AttackRange)
         {
             navAgent.isStopped = true;
             moveState = MoveType.Stopped;
 
-            animator.SetTrigger("Attacking");
             SetDirection(GetDirection(playerRef.position));
+            animator.SetTrigger("Attacking");
+            print("Attacking!");
         }
     }
 
-    public virtual void SpawnProjectile()
+    public virtual void SpawnEnemyProjectile(int _i)
     {
-
+        Transform newProjectile = Instantiate(definition.Projectiles[_i], projectileSpawner.position, Quaternion.identity);
+        EnemyProjectile _proj = newProjectile.GetComponent<EnemyProjectile>();
+        _proj.projectileDamage = definition.Damage;
+        if (animator.GetInteger("Dir") == 3)
+        {
+            _proj.FlipSprite();
+        }
     }
 
     public virtual void TakeDamage(float _dmg)
@@ -248,6 +273,7 @@ public class EnemyBase : MonoBehaviour
         if (attackTimeRemaining <= 0)
         {
             attackTimeRemaining = -1f;
+            animator.ResetTrigger("Attacking");
         }
         else
         {
@@ -259,22 +285,26 @@ public class EnemyBase : MonoBehaviour
     {
         int _direction = 0;
 
-        Vector3 targetDir = _target - transform.position;
-        float _targetAngle = Vector3.Angle(targetDir, transform.forward) * 2;
-        print(_targetAngle);
+        //Vector3 targetDir = _target - transform.position;
+        //float _targetAngle = Vector3.AngleBetween(Vector3.up, _target) * 2;
+        
+
+        float _targetAngle = (Mathf.Atan2(transform.position.x-_target.x, transform.position.z - _target.z) / Mathf.PI) * 180f;
+        if (_targetAngle < 0) { _targetAngle += 360f; }
+        //print(_targetAngle);
 
         if (_targetAngle >= 45 && _targetAngle < 135)
         {
-            print("Looking Right");
-            _direction = 1;
+            //print("Looking Left");
+            _direction = 3;
         }else if(_targetAngle >= 135 && _targetAngle < 225)
         {
-            print("Looking Up");
+            //print("Looking Up");
             _direction = 2;
         }else if (_targetAngle >= 225 && _targetAngle < 315)
         {
-            print("Looking Left");
-            _direction = 3;
+            //print("Looking Right");
+            _direction = 1;
         }
 
         return _direction;
@@ -285,6 +315,8 @@ public class EnemyBase : MonoBehaviour
         direction = _dir;
         animator.SetInteger("Dir", _dir);
     }
+
+
 
 
     //Not working for some reason but currently not needed either.

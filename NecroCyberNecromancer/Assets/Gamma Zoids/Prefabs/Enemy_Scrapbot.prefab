@@ -565,6 +565,7 @@ MonoBehaviour:
   - {fileID: 0}
   moveState: 0
   attackTimeRemaining: 0
+  projectileSpawner: {fileID: 168155392108853578}
   playerRef: {fileID: 0}
   health: 1
 --- !u!95 &566092692275678879
@@ -577,7 +578,7 @@ Animator:
   m_GameObject: {fileID: 168155392222319736}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ac50b6e7edbf97547834debb7021456d, type: 2}
+  m_Controller: {fileID: 9100000, guid: fbfdbd8c89136084280012e149734556, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -934,7 +935,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.5625, y: 0.1875}
+  m_Size: {x: 0.25, y: 0.1875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

@@ -25,4 +25,7 @@ MonoBehaviour:
   idleMaxDelay: 2
   idleType: 2
   patrolRadius: 4
-  projectiles: []
+  projectiles:
+  - {fileID: 3425902796468738, guid: e38e01e81885bf64db71fae7deb91a31, type: 3}
+  - {fileID: 6946619873383594474, guid: 43e294f0042d5db47baa42525a46b5cb, type: 3}
+  - {fileID: 3118225366691625209, guid: aa4c8ac2e51870249bb8b0fa4e302a6d, type: 3}
