@@ -15,7 +15,7 @@ public class ShipLever : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "player"&&!shipIsLanded)
+        if (other.gameObject.tag == "Player"&&!shipIsLanded)
         {
             arrowObject.SetActive(true);
             if (Input.GetKey(KeyCode.E)&&!shipIsLanded)
@@ -30,7 +30,7 @@ public class ShipLever : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "player")
+        if (other.gameObject.tag == "Player")
         {
             arrowObject.SetActive(false);
 

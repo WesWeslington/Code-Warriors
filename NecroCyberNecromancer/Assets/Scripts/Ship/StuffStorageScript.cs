@@ -22,7 +22,7 @@ public class StuffStorageScript : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "player")
+        if (other.gameObject.tag == "Player")
         {
             arrowObject.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
@@ -36,7 +36,7 @@ public class StuffStorageScript : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "player")
+        if (other.gameObject.tag == "Player")
         {
             arrowObject.SetActive(false);
             stuffPanelUI.SetActive(false);
