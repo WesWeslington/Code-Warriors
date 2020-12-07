@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class PlayerStats : MonoBehaviour
@@ -13,20 +14,21 @@ public class PlayerStats : MonoBehaviour
     public int playerLevel=1;
     public int playerPotions = 3;
     public int maxPlayerPotions = 5;
-    /*
+    
      [SerializeField] private Text levelText;
      [SerializeField] private Text healthText;
      [SerializeField] private Slider healthBar;
      [SerializeField] private Slider EXPBar;
-     [SerializeField] private Text playerLevelText;
+    [SerializeField] private Text EXPText;
 
-     
-      */
+
+    [SerializeField] private Text potionCountText;
+      
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        UpdateUIText();
     }
 
     // Update is called once per frame
@@ -75,6 +77,7 @@ public class PlayerStats : MonoBehaviour
         {
             playerPotions--;
             PlayerHeal(maxHealth / 3);
+            UpdateUIText();
         }
         else
         {
@@ -91,23 +94,31 @@ public class PlayerStats : MonoBehaviour
         {
             print("Level Up! You are now lvl."+ playerLevel);
             playerLevel++;
+            currentEXP = 0;
+            maxEXP = (int)(maxEXP*1.5);
         }
         UpdateUIText();
     }
 
-    void UpdateUIText()//Used for texts and sliders
+    public void UpdateUIText()//Used for texts and sliders
     {
-        /*
-         healthBar.minValue = health;
-         healthBar.maxValue = maxHealth;
-
-        healthText.text = "HP:"+health.toString()+"/"+maxHealth.toString();
-
-        EXPBar.minValue =currentEXP;
-        EXPBar.maxValue = maxEXP;
         
-        playerLevelText.text = playerLevel.toString();
-         */
+        // healthBar.value = health;
+       //  healthBar.maxValue = maxHealth;
+        healthBar.value = ((float)health / (float)maxHealth);
+    
+
+    healthText.text = health.ToString()+"/"+maxHealth.ToString();
+
+        //EXPBar.minValue =currentEXP;
+        //EXPBar.value = maxEXP;
+        EXPBar.value = ((float)currentEXP / (float)maxEXP);
+        EXPText.text = (((float)currentEXP / (float)maxEXP) * 100).ToString() + "%";
+
+        levelText.text = playerLevel.ToString();
+
+        potionCountText.text = playerPotions.ToString();
+         
     }
 
 

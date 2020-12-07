@@ -24,6 +24,7 @@ public class PickUpHeal : MonoBehaviour
         if (other.gameObject.tag == "player" && !healed)
         {
             pStats.PlayerHeal(pStats.maxHealth / maxHealthDividedBy);
+            pStats.UpdateUIText();
             Destroy(gameObject);
             print("player healed by " + (pStats.maxHealth / maxHealthDividedBy) + "HP");
             healed = true;//This is so it only happens once
