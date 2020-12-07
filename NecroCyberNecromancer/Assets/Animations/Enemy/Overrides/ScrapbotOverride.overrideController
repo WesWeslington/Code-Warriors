@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ScrapbotOverride
+  m_Controller: {fileID: 9100000, guid: ac50b6e7edbf97547834debb7021456d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 1ddb31a79450db144ae6cfb420cce809, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ba269ee1bfd014e4ba651d5d22fe60e3, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1b1ee667c79852e45bcbb7d442150e88, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3976c3394ce22c64bbd114418dccf4a4, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8860fe05a4de2504ea085d78647c29d8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3fec409aa95fcc7408351bbe7def80ec, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 057adaad41766094a85c64196c1602ca, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3fec409aa95fcc7408351bbe7def80ec, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8aa14f6c54db2024bb2bd809d62d52f1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3976c3394ce22c64bbd114418dccf4a4, type: 2}

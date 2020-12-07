@@ -45,6 +45,7 @@ public class EnemyBase : MonoBehaviour
 
     float direction = 0;
 
+    [SerializeField]
     Transform playerRef = null;
 
     [SerializeField]
@@ -180,6 +181,7 @@ public class EnemyBase : MonoBehaviour
         moveTimeout = (Vector3.Distance(_target, navAgent.pathEndPosition)/navAgent.speed) * 2f;
         if (isAngry) { moveState = MoveType.Running; } else { moveState = MoveType.Walking; }
         navAgent.isStopped = false;
+        animator.SetBool("IsMoving", true);
         //print("Setting new path");
         //StartCoroutine(MoveLimitTimer());
     }
@@ -192,6 +194,7 @@ public class EnemyBase : MonoBehaviour
             //print("Stopping path");
             navAgent.isStopped = true;
             moveState = MoveType.Stopped;
+            animator.SetBool("IsMoving", false);
             //StopCoroutine(MoveLimitTimer());
         }
     }
