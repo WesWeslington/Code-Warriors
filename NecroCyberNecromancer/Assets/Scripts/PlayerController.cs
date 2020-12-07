@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce=10;
     Vector3 movement;
     [SerializeField] private float rayCastJumpDistance = 1f;
-
+    [SerializeField] private float rbMass;//will be multiplied by 2 when jumping 
     float playerSpeed;//Used to store the speed when halving it
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         charController = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
-        playerSpeed = movementSpeed/2;
+        
     }
 
     // Update is called once per frame
@@ -41,14 +41,15 @@ public class PlayerController : MonoBehaviour
 
         if (!IsGrounded())
         {
-            movementSpeed = playerSpeed;
+
+            rb.mass = rbMass * 3;
             anim.SetBool("isGrounded", false);
         }
         else
         {
+            rb.mass = rbMass;
             anim.SetBool("isGrounded", true);
 
-            movementSpeed = playerSpeed * 2;
         }
     }
     private void FixedUpdate()
@@ -64,7 +65,7 @@ public class PlayerController : MonoBehaviour
 
         Vector3 newPosition = rb.position + rb.transform.TransformDirection(movement);
 
-        rb.MovePosition(newPosition);
+        rb.AddForce(movement,ForceMode.Impulse);
         forwardMovement = transform.forward * vAxis;
         rightMovement = transform.right * hAxis;
         anim.SetFloat("horizontal", Input.GetAxis("Horizontal"));

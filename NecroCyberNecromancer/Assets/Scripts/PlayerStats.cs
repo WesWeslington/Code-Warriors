@@ -11,6 +11,8 @@ public class PlayerStats : MonoBehaviour
     public int currentEXP = 0;
     public int maxEXP = 25;
     public int playerLevel=1;
+    public int playerPotions = 3;
+    public int maxPlayerPotions = 5;
     /*
      [SerializeField] private Text levelText;
      [SerializeField] private Text healthText;
@@ -30,7 +32,10 @@ public class PlayerStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            PlayerDrinkPotion();
+        }
     }
 
     public void PlayerTakeDamage(int enemyDamage)
@@ -45,6 +50,15 @@ public class PlayerStats : MonoBehaviour
 
     }
 
+    public void PlayerHeal(int healAmount)
+    {
+        health += healAmount;
+        if (health > maxHealth)
+        {
+            health = maxHealth;
+        }
+    }
+
     private void CheckForDeath()
     {
         if (health <= 0)
@@ -53,6 +67,18 @@ public class PlayerStats : MonoBehaviour
             print("Player has died");
             UpdateUIText();
 
+        }
+    }
+    public void PlayerDrinkPotion()
+    {
+        if (playerPotions > 0 && health<maxHealth)
+        {
+            playerPotions--;
+            PlayerHeal(maxHealth / 3);
+        }
+        else
+        {
+            print("Either player has full health or no potions");
         }
     }
 
@@ -83,5 +109,6 @@ public class PlayerStats : MonoBehaviour
         playerLevelText.text = playerLevel.toString();
          */
     }
+
 
 }
