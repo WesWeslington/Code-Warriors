@@ -65,6 +65,7 @@ public class EnemyBase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if(moveState != MoveType.Stopped)
         {
             CalculateSpeed();
@@ -244,12 +245,24 @@ public class EnemyBase : MonoBehaviour
 
     public virtual void TakeDamage(float _dmg)
     {
+        health -= _dmg;
 
+        if(health <= 0)
+        {
+            Debug.Log("Enemy terminated");
+            animator.SetBool("IsDead", true);
+            navAgent.isStopped = true;
+            moveState = MoveType.Stopped;
+            this.enabled = false;
+            return;
+        }
+
+        animator.SetTrigger("TakeDamage");
     }
 
     public virtual void Stun(float _duration)
     {
-
+       
     }
 
     void DoIdleTimer()
