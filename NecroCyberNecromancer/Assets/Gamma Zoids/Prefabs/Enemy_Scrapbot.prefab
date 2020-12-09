@@ -274,7 +274,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168155392108853577}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0099031925, y: -0.2859999, z: -0.024000049}
+  m_LocalPosition: {x: -0.34, y: -0.28599992, z: 0.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 168155392860168803}
@@ -508,9 +508,10 @@ GameObject:
   - component: {fileID: 168155392222319738}
   - component: {fileID: 566092692275678879}
   - component: {fileID: 4303418824990743867}
+  - component: {fileID: 2571399433994502511}
   m_Layer: 8
   m_Name: Enemy_Scrapbot
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -609,6 +610,20 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &2571399433994502511
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168155392222319736}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.8448911
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.8761318, z: 0}
 --- !u!1 &168155392266671149
 GameObject:
   m_ObjectHideFlags: 0

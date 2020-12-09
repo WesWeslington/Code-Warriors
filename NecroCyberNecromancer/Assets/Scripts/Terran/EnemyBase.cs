@@ -65,11 +65,6 @@ public class EnemyBase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
-        {
-            TakeDamage(2);
-        }
-
 
         if(moveState != MoveType.Stopped)
         {
