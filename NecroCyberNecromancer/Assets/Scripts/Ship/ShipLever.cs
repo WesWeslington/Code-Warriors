@@ -8,6 +8,7 @@ public class ShipLever : MonoBehaviour
     private SpriteRenderer leverSprite;
     bool shipIsLanded=false;
     [SerializeField] private Animator shipAnim;
+    public int flyAreaInt;
     private void Awake()
     {
         leverSprite = GetComponent<SpriteRenderer>();
