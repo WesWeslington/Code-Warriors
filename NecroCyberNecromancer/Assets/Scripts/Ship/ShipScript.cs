@@ -23,7 +23,7 @@ public class ShipScript : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "player")
+        if (other.gameObject.tag == "Player")
         {
             closedShip.SetActive(false);
             openShip.SetActive(true);
@@ -34,16 +34,13 @@ public class ShipScript : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "player")
+        if (other.gameObject.tag == "Player")
         {
             closedShip.SetActive(true);
             openShip.SetActive(false);
         }
 
-        if (this.gameObject.name == "lever")
-        {
-
-        }
+ 
     }
     public void StopAnimator()
     {
