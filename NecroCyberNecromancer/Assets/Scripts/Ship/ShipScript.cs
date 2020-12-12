@@ -85,7 +85,9 @@ public class ShipScript : MonoBehaviour
                 shipAnim.enabled = false;
             closedShip.SetActive(false);
             openShip.SetActive(true);
-            
+            wholeShip.transform.rotation = shipLandLocations[flyInt].transform.rotation;
+
+
         }
         else
         {
@@ -98,5 +100,8 @@ public class ShipScript : MonoBehaviour
     {
         wholeShip.transform.position = shipLandLocations[flyInt].position;
         wholeCharacter.transform.position= shipLandLocations[flyInt].position;
+
+        wholeShip.transform.rotation = shipLandLocations[flyInt].transform.rotation;
+
     }
 }

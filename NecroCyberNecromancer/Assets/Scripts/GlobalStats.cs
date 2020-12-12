@@ -12,6 +12,7 @@ public class GlobalStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        primaryColor = ChooseColor();
         UpdateColor();
         playerLight.color = primaryColor;
         pStats = FindObjectOfType<PlayerStats>();
@@ -29,6 +30,7 @@ public class GlobalStats : MonoBehaviour
         foreach(GameObject bone in skeletonSprites)
         {
             bone.GetComponent<SpriteRenderer>().color = primaryColor;
+            playerLight.color = primaryColor;
         }
     }
 
@@ -42,5 +44,38 @@ public class GlobalStats : MonoBehaviour
     {
 
     }
+    Color ChooseColor()
+    {
+        int randomNumber = Random.Range(0, 6);
 
+        if (randomNumber == 0)
+        {
+            return Color.red;
+        }
+        else if (randomNumber == 1)
+        {
+            return Color.blue;
+        }
+        else if (randomNumber == 2)
+        {
+            return Color.cyan;
+        }
+        else if (randomNumber == 3)
+        {
+            return Color.magenta;
+        }
+        else if (randomNumber == 4)
+        {
+            return Color.green;
+        }
+        else if (randomNumber == 5)
+        {
+            return Color.yellow;
+        }
+        else
+        {
+            return Color.white;
+        }
+
+    }
 }
