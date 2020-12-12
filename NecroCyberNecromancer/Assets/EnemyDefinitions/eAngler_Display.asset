@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92639c24d1838b74a812e81ddadd0dec, type: 3}
+  m_Name: eAngler_Display
+  m_EditorClassIdentifier: 
+  eHead:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  eEyes:
+  - {fileID: 3389752316465126077, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  - {fileID: 3389752316465126077, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  - {fileID: 3389752316465126077, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  eMouth:
+  - {fileID: -6637148958096700033, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  - {fileID: -6637148958096700033, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  - {fileID: -6637148958096700033, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  eEars:
+  - {fileID: -2122051140508740116, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  - {fileID: -2122051140508740116, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  - {fileID: -2122051140508740116, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  eTorso:
+  - {fileID: -6337650389450425443, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  - {fileID: -6337650389450425443, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  - {fileID: -6337650389450425443, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  eWaist:
+  - {fileID: -1203990943127646370, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  - {fileID: -1203990943127646370, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  - {fileID: -1203990943127646370, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  eArm:
+  - {fileID: 5605519934738184798, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  - {fileID: 5605519934738184798, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  - {fileID: 5605519934738184798, guid: a3bc6dedec4476841ab0111d2ab8559c, type: 3}
+  eHand:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  mirrorArms: 1
+  eLeg:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  eFoot:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  mirrorLegs: 1
