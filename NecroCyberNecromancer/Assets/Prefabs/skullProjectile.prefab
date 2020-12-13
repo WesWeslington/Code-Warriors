@@ -70,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1580173669
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -7576903710944825506, guid: fe8dc6f5de250314e96be1a9d888376f, type: 3}
   m_Color: {r: 0.55917156, g: 1, b: 0, a: 0.38431373}
@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 4484936075796440642}
   - component: {fileID: 8219434328023237592}
   - component: {fileID: 160303516073877007}
+  - component: {fileID: 7210939880517968894}
   m_Layer: 0
   m_Name: skullProjectile
   m_TagString: Untagged
@@ -174,7 +175,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1580173669
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 262990115477058915, guid: fe8dc6f5de250314e96be1a9d888376f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -215,3 +216,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b1894f259e10ab4380297795e949d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 3
+--- !u!136 &7210939880517968894
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4484936075796440643}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.375
+  m_Height: 2.61
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}

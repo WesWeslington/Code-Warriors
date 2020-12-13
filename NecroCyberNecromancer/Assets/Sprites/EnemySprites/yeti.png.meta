@@ -4,34 +4,37 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -1322526978013775785
-    second: yeti_0
+    second: yetiHeadForward
   - first:
       213: -6197341197958778872
-    second: yeti_1
+    second: yetiHeadBackward
   - first:
       213: 944501762617918181
-    second: yeti_2
+    second: yetiHeadRight
   - first:
       213: 8335883676161386093
-    second: yeti_3
+    second: yetiBodyRight
   - first:
       213: -2740600298960496183
-    second: yeti_4
+    second: yetiBodyBackward
   - first:
       213: 8559227836835613502
-    second: yeti_5
+    second: yetiRightArm
   - first:
       213: -7136262422847193442
-    second: yeti_6
+    second: yetiBodyFront
   - first:
       213: -4033525648314904247
-    second: yeti_7
+    second: yetiLeftArm
   - first:
       213: -4656541162647873393
-    second: yeti_8
+    second: yetiRightLeg
   - first:
       213: -4066317140636402640
-    second: yeti_9
+    second: yetiLeftLeg
+  - first:
+      213: -7160717384017261480
+    second: yetiFist
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -119,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: yeti_0
+      name: yetiHeadForward
       rect:
         serializedVersion: 2
         x: 0
@@ -127,7 +130,7 @@ TextureImporter:
         width: 24
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,7 +143,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: yeti_1
+      name: yetiHeadBackward
       rect:
         serializedVersion: 2
         x: 28
@@ -148,7 +151,7 @@ TextureImporter:
         width: 24
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,7 +164,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: yeti_2
+      name: yetiHeadRight
       rect:
         serializedVersion: 2
         x: 0
@@ -169,7 +172,7 @@ TextureImporter:
         width: 21
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,7 +185,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: yeti_3
+      name: yetiBodyRight
       rect:
         serializedVersion: 2
         x: 29
@@ -190,7 +193,7 @@ TextureImporter:
         width: 8
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,7 +206,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: yeti_4
+      name: yetiBodyBackward
       rect:
         serializedVersion: 2
         x: 50
@@ -211,7 +214,7 @@ TextureImporter:
         width: 8
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,7 +227,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: yeti_5
+      name: yetiRightArm
       rect:
         serializedVersion: 2
         x: 21
@@ -232,7 +235,7 @@ TextureImporter:
         width: 5
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,7 +248,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: yeti_6
+      name: yetiBodyFront
       rect:
         serializedVersion: 2
         x: 29
@@ -253,7 +256,7 @@ TextureImporter:
         width: 8
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,7 +269,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: yeti_7
+      name: yetiLeftArm
       rect:
         serializedVersion: 2
         x: 41
@@ -274,7 +277,7 @@ TextureImporter:
         width: 5
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -287,7 +290,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: yeti_8
+      name: yetiRightLeg
       rect:
         serializedVersion: 2
         x: 21
@@ -295,7 +298,7 @@ TextureImporter:
         width: 9
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -308,7 +311,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: yeti_9
+      name: yetiLeftLeg
       rect:
         serializedVersion: 2
         x: 34
@@ -316,7 +319,7 @@ TextureImporter:
         width: 9
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -324,6 +327,27 @@ TextureImporter:
       bones: []
       spriteID: 03cf848da1a8197c0800000000000000
       internalID: -4066317140636402640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yetiFist
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 12
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ccfa47a7500ac90800000000000000
+      internalID: -7160717384017261480
       vertices: []
       indices: 
       edges: []
