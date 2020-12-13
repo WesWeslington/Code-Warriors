@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491ac85c92793864ba275eebc7ddd609, type: 3}
+  m_Name: eAnglerBoss_Def
+  m_EditorClassIdentifier: 
+  enemySpec: 0
+  enemySprites: {fileID: 11400000, guid: a75c79d3be64ffe41a18c85013301885, type: 2}
+  enemyAnimations: {fileID: 22100000, guid: 81c89969507ce5e47b528c35e5cc36a1, type: 2}
+  baseHP: 30
+  speedWalk: 3
+  speedRun: 5
+  damage: 6
+  attackDelay: 1.5
+  attackRange: 3
+  aggressionRadius: 10
+  idleMaxDelay: 0
+  idleType: 1
+  patrolRadius: 0.5
+  projectiles:
+  - {fileID: 6110340058115206117, guid: 2ab92c993e78390459296de2dfa5b79c, type: 3}
