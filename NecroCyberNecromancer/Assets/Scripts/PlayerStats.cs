@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerStats : MonoBehaviour
@@ -14,6 +15,7 @@ public class PlayerStats : MonoBehaviour
     public int playerLevel=1;
     public int playerPotions = 3;
     public int maxPlayerPotions = 5;
+    public int playerScore = 0;
     
      [SerializeField] private Text levelText;
      [SerializeField] private Text healthText;
@@ -23,12 +25,17 @@ public class PlayerStats : MonoBehaviour
 
 
     [SerializeField] private Text potionCountText;
-      
+    [SerializeField] private GameObject GameOver;
+    [SerializeField] private GameObject WinPanel;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         UpdateUIText();
+        GameOver.SetActive(false);
+        WinPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -67,6 +74,7 @@ public class PlayerStats : MonoBehaviour
         {
             health = 0;
             print("Player has died");
+            GameOver.SetActive(true);
             UpdateUIText();
 
         }
@@ -94,6 +102,7 @@ public class PlayerStats : MonoBehaviour
         {
             print("Level Up! You are now lvl."+ playerLevel);
             playerLevel++;
+            maxHealth += 2;
             currentEXP = 0;
             maxEXP = (int)(maxEXP*1.5);
         }
@@ -121,5 +130,17 @@ public class PlayerStats : MonoBehaviour
          
     }
 
+    public void AddPlayerPoint()
+    {
+        playerScore++;
+        if (playerScore >= 4)
+        {
+            WinPanel.SetActive(true);
+        }
+    }
+    public void OnMenuButtonPress()
+    {
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
 
+    }
 }
