@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491ac85c92793864ba275eebc7ddd609, type: 3}
+  m_Name: eScrapbotBoss_Def
+  m_EditorClassIdentifier: 
+  enemySpec: 0
+  enemySprites: {fileID: 11400000, guid: 8094be69fd59f5440bfbcba4996db2ae, type: 2}
+  enemyAnimations: {fileID: 22100000, guid: 140e5af861f25cf46981b0d04595589e, type: 2}
+  baseHP: 25
+  speedWalk: 1
+  speedRun: 4
+  damage: 5
+  attackDelay: 2
+  attackRange: 4
+  aggressionRadius: 10
+  idleMaxDelay: 2
+  idleType: 0
+  patrolRadius: 1
+  projectiles:
+  - {fileID: 8475460207551305243, guid: 431425798abb51c448f8354e3928ac17, type: 3}
+  - {fileID: 5487161371845002342, guid: 73b0acbd0fce0a34999911bcaeb7be57, type: 3}
+  - {fileID: 6110340058115206117, guid: 2ab92c993e78390459296de2dfa5b79c, type: 3}
