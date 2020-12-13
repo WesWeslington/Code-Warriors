@@ -4,25 +4,25 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 5603908600166289112
-    second: mechaFly_0
+    second: leftWing
   - first:
       213: -6303182636676678171
-    second: mechaFly_1
+    second: rightWing
   - first:
       213: 5163512521723913454
-    second: mechaFly_2
+    second: eyes
   - first:
       213: -5608206485010106673
-    second: mechaFly_3
+    second: body
   - first:
       213: 6771291133853803204
-    second: mechaFly_4
+    second: backest Leg
   - first:
       213: -6012200119369026042
-    second: mechaFly_5
+    second: middleLeg
   - first:
       213: 5984845381065780728
-    second: mechaFly_6
+    second: front leg
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mechaFly_0
+      name: leftWing
       rect:
         serializedVersion: 2
         x: 0
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mechaFly_1
+      name: rightWing
       rect:
         serializedVersion: 2
         x: 7
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mechaFly_2
+      name: eyes
       rect:
         serializedVersion: 2
         x: 0
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mechaFly_3
+      name: body
       rect:
         serializedVersion: 2
         x: 8
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mechaFly_4
+      name: backest Leg
       rect:
         serializedVersion: 2
         x: 1
@@ -215,7 +215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mechaFly_5
+      name: middleLeg
       rect:
         serializedVersion: 2
         x: 8
@@ -236,7 +236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mechaFly_6
+      name: front leg
       rect:
         serializedVersion: 2
         x: 15
