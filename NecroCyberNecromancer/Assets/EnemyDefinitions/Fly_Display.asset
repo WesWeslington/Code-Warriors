@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92639c24d1838b74a812e81ddadd0dec, type: 3}
+  m_Name: Fly_Display
+  m_EditorClassIdentifier: 
+  eHead:
+  - {fileID: -5608206485010106673, guid: 2be56875691b74e4d9579500203769f0, type: 3}
+  eEyes:
+  - {fileID: 5163512521723913454, guid: 2be56875691b74e4d9579500203769f0, type: 3}
+  eMouth: []
+  eEars: []
+  eTorso:
+  - {fileID: -5608206485010106673, guid: 2be56875691b74e4d9579500203769f0, type: 3}
+  eWaist: []
+  eArm:
+  - {fileID: 5984845381065780728, guid: 2be56875691b74e4d9579500203769f0, type: 3}
+  eHand: []
+  mirrorArms: 1
+  eLeg:
+  - {fileID: -6012200119369026042, guid: 2be56875691b74e4d9579500203769f0, type: 3}
+  eFoot:
+  - {fileID: 6771291133853803204, guid: 2be56875691b74e4d9579500203769f0, type: 3}
+  mirrorLegs: 1
