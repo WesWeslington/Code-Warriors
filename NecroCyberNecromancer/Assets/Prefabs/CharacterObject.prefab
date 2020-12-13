@@ -243,12 +243,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7651372616053171212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9510171b75daa7349874f35328b930c6, type: 3}
+  m_Script: {fileID: 11500000, guid: fb27f12b9d8bbe041b7e6e65e69e3df3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   proj: {fileID: 4484936075796440643, guid: 64dc7367c060dfd4a9d2e3be6693f1a8, type: 3}
-  mainCamera: {fileID: 7651372616472487833}
+  deathRing: {fileID: 5989931958285407111, guid: a41aaf6e69627a247b427b5dcb374f56, type: 3}
+  mainCamera: {fileID: 5100998014313993229, guid: 5b4e767c98552d0479699181bea2ba93, type: 3}
   crossTest: {fileID: 3353100799114474117, guid: 13401f9d7d2dffe4c897a777aab1ed97, type: 3}
+  location: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  projSpeed: 1
 --- !u!1 &7651372616112961996
 GameObject:
   m_ObjectHideFlags: 0
