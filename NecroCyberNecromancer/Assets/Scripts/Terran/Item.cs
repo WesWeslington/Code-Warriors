@@ -12,8 +12,8 @@ public class Item : MonoBehaviour
         if(other.tag=="Player")
         {
             this.gameObject.SetActive(false);
-            animator.SetBool("Unlocked", true);
-            //GetComponent<PlayerStats>().AddPlayerPoint();
+            if (animator != null) { animator.SetBool("Unlocked", true); }
+            GetComponent<PlayerStats>().AddPlayerPoint();
         }
     }
 }
