@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491ac85c92793864ba275eebc7ddd609, type: 3}
+  m_Name: SandWormBoss_Def
+  m_EditorClassIdentifier: 
+  enemySpec: 0
+  enemySprites: {fileID: 11400000, guid: fe2de7181c14ae44487f60b80cf962aa, type: 2}
+  enemyAnimations: {fileID: 22100000, guid: bb93aa4ee2be90449a55947d1864f338, type: 2}
+  baseHP: 30
+  speedWalk: 2
+  speedRun: 4
+  damage: 3
+  attackDelay: 2
+  attackRange: 2
+  aggressionRadius: 5
+  idleMaxDelay: 2
+  idleType: 2
+  patrolRadius: 1
+  projectiles:
+  - {fileID: 3425902796468738, guid: e38e01e81885bf64db71fae7deb91a31, type: 3}
+  - {fileID: 6946619873383594474, guid: 43e294f0042d5db47baa42525a46b5cb, type: 3}
+  - {fileID: 3118225366691625209, guid: aa4c8ac2e51870249bb8b0fa4e302a6d, type: 3}

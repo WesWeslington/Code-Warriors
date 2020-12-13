@@ -66,7 +66,7 @@ public class projectile : MonoBehaviour
 
 
 
-        // b.GetComponent<Rigidbody>().velocity = direction * projSpeed;
+        b.transform.position = Vector3.MoveTowards(transform.position, crossTest.transform.position, 2);
         //  b.GetComponent<Rigidbody>().AddForce( = direction * projSpeed;
 
     }
@@ -134,8 +134,8 @@ public class projectile : MonoBehaviour
                 b.transform.localScale *= 4;
                 direction = new Vector3((location.x - transform.position.x), 0, (location.z - transform.position.z));
 
-              //  b.GetComponent<Rigidbody>().velocity = direction * projSpeed;
-                
+                b.transform.position = Vector3.MoveTowards(transform.position, crossTest.transform.position, 2);
+
             }
 
         }

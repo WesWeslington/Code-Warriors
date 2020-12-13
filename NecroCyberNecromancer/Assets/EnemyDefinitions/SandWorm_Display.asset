@@ -24,10 +24,13 @@ MonoBehaviour:
   - {fileID: -7474734220896161568, guid: 4d6e57c6a4485cf4d9698fbf2b9affb7, type: 3}
   eWaist:
   - {fileID: -8646235665872449163, guid: 4d6e57c6a4485cf4d9698fbf2b9affb7, type: 3}
-  eArm: []
-  eHand: []
+  eArm:
+  - {fileID: 0}
+  eHand:
+  - {fileID: 0}
   mirrorArms: 1
   eLeg:
   - {fileID: 3313145767846596247, guid: 4d6e57c6a4485cf4d9698fbf2b9affb7, type: 3}
-  eFoot: []
+  eFoot:
+  - {fileID: 0}
   mirrorLegs: 1
