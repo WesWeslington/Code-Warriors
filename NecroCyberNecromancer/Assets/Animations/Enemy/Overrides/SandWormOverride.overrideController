@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SandWormOverride
+  m_Controller: {fileID: 9100000, guid: ac50b6e7edbf97547834debb7021456d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 1ddb31a79450db144ae6cfb420cce809, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: da4e9ebf0d0b67a449a02b6e17a09256, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1b1ee667c79852e45bcbb7d442150e88, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 41efe45a58db3d343bed54baa6426a68, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8860fe05a4de2504ea085d78647c29d8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 15310579bee88db41adfaa0e8a93b1c8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 057adaad41766094a85c64196c1602ca, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2d14f19fe2563464fb20b12eb561fbe8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8aa14f6c54db2024bb2bd809d62d52f1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ba04423b3c2973a4797ab5dfc07eee86, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 782440f18e933da4794b8a26d6aa145f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4e14755d533ffe040bfd617a74b1d7aa, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ec6437fff8e73b545be09479ca1f809b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ff77d1ca509f04c40ba7f8bab68d9762, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a3dbcb02378d679408b8d6e4c6da3efc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5cccf1faba773974bb7ac5e045ca1cb8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 392bfc1fe345c164aaafd045c8a60be4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a27f8561258517d47a0e6b43912d4580, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 44198ef925a9233449061cb8ea5c00a5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 40e70249f9e518c448520f6f7066269a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f3a2a291b3d6c5e4899021c05c3d7661, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: db81c708e3a7fe44682e4994b8a486cc, type: 2}

@@ -42,7 +42,7 @@ public class PlayerStats : MonoBehaviour
 
     public void PlayerTakeDamage(int enemyDamage)
     {
-        int damageDealt = Random.Range(0, enemyDamage + 1);
+        int damageDealt = Random.Range(enemyDamage/2, enemyDamage + 1);
 
         print("Player has taken " + damageDealt + " damage.");
 

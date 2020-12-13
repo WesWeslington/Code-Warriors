@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float rayCastJumpDistance = 1f;
     [SerializeField] private float rbMass;//will be multiplied by 2 when jumping 
     float playerSpeed;//Used to store the speed when halving it
+
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +53,8 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isGrounded", true);
 
         }
+
+       
     }
     private void FixedUpdate()
     {

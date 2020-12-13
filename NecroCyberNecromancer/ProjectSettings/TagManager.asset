@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemy
   - ground
-  - Hazard
+  - Enemy
+  - blast
   layers:
   - Default
   - TransparentFX

@@ -21,7 +21,7 @@ public class PickUpHeal : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "player" && !healed)
+        if (other.gameObject.tag == "Player" && !healed)
         {
             pStats.PlayerHeal(pStats.maxHealth / maxHealthDividedBy);
             pStats.UpdateUIText();
