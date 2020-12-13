@@ -2382,6 +2382,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5100998014313993242, guid: 5b4e767c98552d0479699181bea2ba93, type: 3}
+      propertyPath: levelText
+      value: 
+      objectReference: {fileID: 799030935}
+    - target: {fileID: 5100998014313993242, guid: 5b4e767c98552d0479699181bea2ba93, type: 3}
+      propertyPath: EXPText
+      value: 
+      objectReference: {fileID: 799296183}
+    - target: {fileID: 5100998014313993242, guid: 5b4e767c98552d0479699181bea2ba93, type: 3}
+      propertyPath: healthText
+      value: 
+      objectReference: {fileID: 726347503}
+    - target: {fileID: 5100998014313993242, guid: 5b4e767c98552d0479699181bea2ba93, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 540899271}
+    - target: {fileID: 5100998014313993242, guid: 5b4e767c98552d0479699181bea2ba93, type: 3}
+      propertyPath: EXPBar
+      value: 
+      objectReference: {fileID: 1667183587}
+    - target: {fileID: 5100998014313993242, guid: 5b4e767c98552d0479699181bea2ba93, type: 3}
+      propertyPath: potionCountText
+      value: 
+      objectReference: {fileID: 919579206}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b4e767c98552d0479699181bea2ba93, type: 3}
 --- !u!1 &64503650
