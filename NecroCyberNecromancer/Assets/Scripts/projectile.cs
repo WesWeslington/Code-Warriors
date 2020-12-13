@@ -63,10 +63,10 @@ public class projectile : MonoBehaviour
         b.transform.position = player.transform.position;
         b.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
 
-
-
-
         b.transform.position = Vector3.MoveTowards(transform.position, crossTest.transform.position, 2);
+
+
+        // b.GetComponent<Rigidbody>().velocity = direction * projSpeed;
         //  b.GetComponent<Rigidbody>().AddForce( = direction * projSpeed;
 
     }
@@ -134,8 +134,8 @@ public class projectile : MonoBehaviour
                 b.transform.localScale *= 4;
                 direction = new Vector3((location.x - transform.position.x), 0, (location.z - transform.position.z));
 
-                b.transform.position = Vector3.MoveTowards(transform.position, crossTest.transform.position, 2);
-
+              //  b.GetComponent<Rigidbody>().velocity = direction * projSpeed;
+                
             }
 
         }

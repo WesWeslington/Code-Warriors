@@ -16,14 +16,18 @@ MonoBehaviour:
   - {fileID: -1322526978013775785, guid: c80eac834d4c3c6468bdf7e3212411f1, type: 3}
   - {fileID: 944501762617918181, guid: c80eac834d4c3c6468bdf7e3212411f1, type: 3}
   - {fileID: -6197341197958778872, guid: c80eac834d4c3c6468bdf7e3212411f1, type: 3}
-  eEyes: []
-  eMouth: []
-  eEars: []
+  eEyes:
+  - {fileID: 0}
+  eMouth:
+  - {fileID: 0}
+  eEars:
+  - {fileID: 0}
   eTorso:
   - {fileID: -7136262422847193442, guid: c80eac834d4c3c6468bdf7e3212411f1, type: 3}
   - {fileID: 8335883676161386093, guid: c80eac834d4c3c6468bdf7e3212411f1, type: 3}
   - {fileID: -2740600298960496183, guid: c80eac834d4c3c6468bdf7e3212411f1, type: 3}
-  eWaist: []
+  eWaist:
+  - {fileID: 0}
   eArm:
   - {fileID: 8559227836835613502, guid: c80eac834d4c3c6468bdf7e3212411f1, type: 3}
   eHand:
@@ -31,5 +35,6 @@ MonoBehaviour:
   mirrorArms: 1
   eLeg:
   - {fileID: -4656541162647873393, guid: c80eac834d4c3c6468bdf7e3212411f1, type: 3}
-  eFoot: []
+  eFoot:
+  - {fileID: 0}
   mirrorLegs: 1

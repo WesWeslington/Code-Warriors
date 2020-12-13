@@ -114,6 +114,11 @@ public class EnemyBase : MonoBehaviour
         { navAgent = this.GetComponent<NavMeshAgent>(); }
         navAgent.speed = Definition.SpeedWalk;
 
+        if(playerRef == null)
+        {
+            playerRef = GameObject.FindGameObjectWithTag("Player").transform;
+        }
+
         if (projectileSpawner == null)
         { projectileSpawner = this.transform; }
 
@@ -263,6 +268,7 @@ public class EnemyBase : MonoBehaviour
             navAgent.isStopped = true;
             moveState = MoveType.Stopped;
             this.enabled = false;
+            playerRef.GetComponent<PlayerStats>().PlayerGainEXP((int)definition.Damage);
             for (int i = 0; i < dropsList.Length; i++)
             {
                 dropsList[i].gameObject.SetActive(true);
