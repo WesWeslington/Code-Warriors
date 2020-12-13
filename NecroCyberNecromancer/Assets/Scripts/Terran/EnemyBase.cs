@@ -55,6 +55,10 @@ public class EnemyBase : MonoBehaviour
     [SerializeField]
     float health = 1;
 
+    [Header("Enemy Drops")]
+    [SerializeField]
+    private Transform[] dropsList = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -116,6 +120,11 @@ public class EnemyBase : MonoBehaviour
         if (patrolPoints.Count == 0)
         {
             patrolPoints.Add(this.transform);
+        }
+
+        for(int i = 0; i < dropsList.Length; i++)
+        {
+            dropsList[i].gameObject.SetActive(false);
         }
 
         health = definition.Health;
@@ -254,6 +263,10 @@ public class EnemyBase : MonoBehaviour
             navAgent.isStopped = true;
             moveState = MoveType.Stopped;
             this.enabled = false;
+            for (int i = 0; i < dropsList.Length; i++)
+            {
+                dropsList[i].gameObject.SetActive(true);
+            }
             return;
         }
 
