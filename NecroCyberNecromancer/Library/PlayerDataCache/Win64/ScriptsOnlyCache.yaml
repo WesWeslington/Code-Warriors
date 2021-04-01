@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - EnviroHazard
     - FallZone
     - FlyPanelScript
+    - Item
     - PlayerController
     - PlayerStats
     - ShipLever
@@ -78,57 +79,59 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11724}
+      Script: {instanceID: 11720}
     - Class: 114
-      Script: {instanceID: 11912}
+      Script: {instanceID: 11908}
     - Class: 114
-      Script: {instanceID: 11952}
+      Script: {instanceID: 11948}
     - Class: 114
-      Script: {instanceID: 12038}
+      Script: {instanceID: 12034}
     - Class: 114
-      Script: {instanceID: 12122}
+      Script: {instanceID: 12118}
     - Class: 114
-      Script: {instanceID: 12180}
+      Script: {instanceID: 12176}
     - Class: 114
-      Script: {instanceID: 12316}
+      Script: {instanceID: 12252}
     - Class: 114
-      Script: {instanceID: 12332}
+      Script: {instanceID: 12312}
     - Class: 114
-      Script: {instanceID: 12410}
+      Script: {instanceID: 12328}
     - Class: 114
-      Script: {instanceID: 12584}
+      Script: {instanceID: 12406}
     - Class: 114
-      Script: {instanceID: 12820}
+      Script: {instanceID: 12580}
     - Class: 114
-      Script: {instanceID: 12886}
+      Script: {instanceID: 12816}
     - Class: 114
-      Script: {instanceID: 12958}
+      Script: {instanceID: 12882}
     - Class: 114
-      Script: {instanceID: 13268}
+      Script: {instanceID: 12954}
     - Class: 114
-      Script: {instanceID: 13404}
+      Script: {instanceID: 13264}
     - Class: 114
-      Script: {instanceID: 13436}
+      Script: {instanceID: 13400}
     - Class: 114
-      Script: {instanceID: 13450}
+      Script: {instanceID: 13432}
     - Class: 114
-      Script: {instanceID: 13456}
+      Script: {instanceID: 13446}
     - Class: 114
-      Script: {instanceID: 13772}
+      Script: {instanceID: 13452}
     - Class: 114
-      Script: {instanceID: 13780}
+      Script: {instanceID: 13768}
     - Class: 114
-      Script: {instanceID: 13820}
+      Script: {instanceID: 13776}
     - Class: 114
-      Script: {instanceID: 13834}
+      Script: {instanceID: 13816}
     - Class: 114
-      Script: {instanceID: 13852}
+      Script: {instanceID: 13830}
     - Class: 114
-      Script: {instanceID: 13890}
+      Script: {instanceID: 13848}
     - Class: 114
-      Script: {instanceID: 16344}
+      Script: {instanceID: 13886}
     - Class: 114
-      Script: {instanceID: 16368}
+      Script: {instanceID: 24086}
+    - Class: 114
+      Script: {instanceID: 24110}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -187,23 +190,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11724}
+      Script: {instanceID: 11720}
     - Class: 114
-      Script: {instanceID: 11760}
+      Script: {instanceID: 11756}
     - Class: 114
-      Script: {instanceID: 11912}
+      Script: {instanceID: 11908}
     - Class: 114
-      Script: {instanceID: 11952}
+      Script: {instanceID: 11948}
     - Class: 114
-      Script: {instanceID: 12410}
+      Script: {instanceID: 12406}
     - Class: 114
-      Script: {instanceID: 12886}
+      Script: {instanceID: 12882}
     - Class: 114
-      Script: {instanceID: 13450}
+      Script: {instanceID: 13446}
     - Class: 114
-      Script: {instanceID: 13780}
+      Script: {instanceID: 13776}
     - Class: 114
-      Script: {instanceID: 13852}
+      Script: {instanceID: 13848}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -765,4 +768,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/mainMenu.unity
   - Assets/Scenes/MainWorld.unity
-  playerPath: C:/Users/User/Desktop/CodeWarriorsBUILD/NecroCyberNecromancer.exe
+  playerPath: C:/Users/User/Desktop/CodeWarriors-FinalProject/CodeWarriorsBUILD/NecroCyberNecromancer.exe
